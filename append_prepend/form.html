@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário append and prepend</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="form.js"></script>
+    
+    
+</head>
+<body>
+    
+    <fieldset>
+        <legend>Envie uma mensagem preenchendo o formulário abaixo</legend>
+        <form action="">
+            <label for="name">Name: </label><input type="text" id="name" class="input" name="name" placeholder="Name...">
+            
+            <label for="phone">Phone: </label><span class="campo1"><input type="tel" id="phone" class="input" name="phone" placeholder="Phone..."></span>
+
+            <p id="btnAddPhone">+</p>
+            
+            
+            <label for="email">E-mail: </label><input type="email" id="email" class="input" name="email" placeholder="E-mail...">
+            
+            <!--Atenção, colocar o mesmo name para o radio e usar o value para saber a opção escolhida-->
+            <label for="novidades">Deseja receber nosssas novidades: </label>
+            <label for="sim"><input type="radio" class="escolha" name="opcao" value="s" checked> - Sim</label>
+            <label for="nao"><input type="radio" class="escolha" name="opcao" value="n"> - Não</label>
+            
+            <label for="msg">Sua mensagem: </label><textarea name="msg" id="msg" class="input" cols="30" rows="10" placeholder=" Mensagem... "></textarea>
+            
+            <input type="submit" id="btnEnviar" class="input" value="Enviar">
+        </form>
+    </fieldset>
+    
+</body>
+
+</html>
