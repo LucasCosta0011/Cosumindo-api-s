@@ -3,14 +3,15 @@
     padding:0;
     box-sizing:border-box;
 }
-fieldset{
+fieldset, #reset{
     margin: 0 auto;
     width: 40%;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 fieldset > form{
     margin: 0 auto;
     width: 80%;
+    padding-top: 40px;
 }
 
 form > label{
@@ -21,3 +22,9 @@ fieldset > form > label > input{
     width: 100%;
     padding: 10px;
 }
+#reset{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
