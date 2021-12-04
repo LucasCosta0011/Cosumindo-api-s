@@ -1,0 +1,23 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+fieldset{
+    margin: 0 auto;
+    width: 40%;
+    margin-top: 50px;
+}
+fieldset > form{
+    margin: 0 auto;
+    width: 80%;
+}
+
+form > label{
+    display: block;
+    margin: 10px 10px;
+}
+fieldset > form > label > input{
+    width: 100%;
+    padding: 10px;
+}
